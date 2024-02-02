@@ -1,0 +1,261 @@
+[
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "reduce",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "xml.etree.ElementTree",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xml.etree.ElementTree",
+        "description": "xml.etree.ElementTree",
+        "detail": "xml.etree.ElementTree",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Tk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "RIGHT",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "BOTH",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "RAISED",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Y",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Frame",
+        "importPath": "tkinter.ttk",
+        "description": "tkinter.ttk",
+        "isExtraImport": true,
+        "detail": "tkinter.ttk",
+        "documentation": {}
+    },
+    {
+        "label": "Button",
+        "importPath": "tkinter.ttk",
+        "description": "tkinter.ttk",
+        "isExtraImport": true,
+        "detail": "tkinter.ttk",
+        "documentation": {}
+    },
+    {
+        "label": "Style",
+        "importPath": "tkinter.ttk",
+        "description": "tkinter.ttk",
+        "isExtraImport": true,
+        "detail": "tkinter.ttk",
+        "documentation": {}
+    },
+    {
+        "label": "Label",
+        "importPath": "tkinter.ttk",
+        "description": "tkinter.ttk",
+        "isExtraImport": true,
+        "detail": "tkinter.ttk",
+        "documentation": {}
+    },
+    {
+        "label": "check_column_name",
+        "kind": 2,
+        "importPath": "create_xml_for_ID",
+        "description": "create_xml_for_ID",
+        "peekOfCode": "def check_column_name(file_obj):\n    name_standart =  ['num', 'pressrun', 'file', 'count']\n    reader = csv.DictReader(file_obj, delimiter=';') \n    return name_standart == reader.fieldnames\ndef csv_dict_reader(file_obj):\n    \"\"\"\n    Read a CSV file using csv.DictReader\n    \"\"\"\n    dict = []\n    reader = csv.DictReader(file_obj, delimiter=';')",
+        "detail": "create_xml_for_ID",
+        "documentation": {}
+    },
+    {
+        "label": "csv_dict_reader",
+        "kind": 2,
+        "importPath": "create_xml_for_ID",
+        "description": "create_xml_for_ID",
+        "peekOfCode": "def csv_dict_reader(file_obj):\n    \"\"\"\n    Read a CSV file using csv.DictReader\n    \"\"\"\n    dict = []\n    reader = csv.DictReader(file_obj, delimiter=';')\n    for line in reader:\n        dict.append(line),\n    return dict\ndef createXML(arr):",
+        "detail": "create_xml_for_ID",
+        "documentation": {}
+    },
+    {
+        "label": "createXML",
+        "kind": 2,
+        "importPath": "create_xml_for_ID",
+        "description": "create_xml_for_ID",
+        "peekOfCode": "def createXML(arr):\n    \"\"\"\n    Задаем переменные\n    \"\"\"\n    filename = f\"{arr[0][\"num\"]}.xml\"\n    zakaz_number = arr[0][\"num\"]\n    pressrun = arr[0][\"pressrun\"]\n    count = 0\n    path_image = 'file:///Volumes/data/%d0%a4%d0%98%d0%a0%d0%9c%d0%ab/PRESTIG/_PDF/'\n    \"\"\"",
+        "detail": "create_xml_for_ID",
+        "documentation": {}
+    },
+    {
+        "label": "fragment_name",
+        "kind": 5,
+        "importPath": "create_xml_for_ID",
+        "description": "create_xml_for_ID",
+        "peekOfCode": "fragment_name = '-PRESTIG-MONTAG-710x600_VD_5000.xml'\ncount_maket = 12\ndef check_column_name(file_obj):\n    name_standart =  ['num', 'pressrun', 'file', 'count']\n    reader = csv.DictReader(file_obj, delimiter=';') \n    return name_standart == reader.fieldnames\ndef csv_dict_reader(file_obj):\n    \"\"\"\n    Read a CSV file using csv.DictReader\n    \"\"\"",
+        "detail": "create_xml_for_ID",
+        "documentation": {}
+    },
+    {
+        "label": "count_maket",
+        "kind": 5,
+        "importPath": "create_xml_for_ID",
+        "description": "create_xml_for_ID",
+        "peekOfCode": "count_maket = 12\ndef check_column_name(file_obj):\n    name_standart =  ['num', 'pressrun', 'file', 'count']\n    reader = csv.DictReader(file_obj, delimiter=';') \n    return name_standart == reader.fieldnames\ndef csv_dict_reader(file_obj):\n    \"\"\"\n    Read a CSV file using csv.DictReader\n    \"\"\"\n    dict = []",
+        "detail": "create_xml_for_ID",
+        "documentation": {}
+    },
+    {
+        "label": "AppWindow",
+        "kind": 6,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "class AppWindow(Frame):\n    def __init__(self):\n        super().__init__()\n        self.initUI()\n    def initUI(self):\n        self.master.title(\"Создание XML для спуска\")\n        self.style = Style()\n        self.style.theme_use(\"default\")\n        frame = Frame(self)\n        frame.pack(fill=BOTH, expand=True)",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def main():\n    root = Tk()\n    root.geometry(\"300x200+300+300\")\n    app = AppWindow()\n    root.mainloop()\nif __name__ == '__main__':\n    main()",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "window",
+        "kind": 5,
+        "importPath": "test2",
+        "description": "test2",
+        "peekOfCode": "window = tk.Tk()\nframe1 = tk.Frame(master=window, height=100)\nframe1.pack(fill=tk.X)\nframe2 = tk.Frame(master=window, height=50)\nframe2.pack(fill=tk.X)\nframe3 = tk.Frame(master=window, height=25)\nframe3.pack(fill=tk.X)\nwindow.mainloop()",
+        "detail": "test2",
+        "documentation": {}
+    },
+    {
+        "label": "frame1",
+        "kind": 5,
+        "importPath": "test2",
+        "description": "test2",
+        "peekOfCode": "frame1 = tk.Frame(master=window, height=100)\nframe1.pack(fill=tk.X)\nframe2 = tk.Frame(master=window, height=50)\nframe2.pack(fill=tk.X)\nframe3 = tk.Frame(master=window, height=25)\nframe3.pack(fill=tk.X)\nwindow.mainloop()",
+        "detail": "test2",
+        "documentation": {}
+    },
+    {
+        "label": "frame2",
+        "kind": 5,
+        "importPath": "test2",
+        "description": "test2",
+        "peekOfCode": "frame2 = tk.Frame(master=window, height=50)\nframe2.pack(fill=tk.X)\nframe3 = tk.Frame(master=window, height=25)\nframe3.pack(fill=tk.X)\nwindow.mainloop()",
+        "detail": "test2",
+        "documentation": {}
+    },
+    {
+        "label": "frame3",
+        "kind": 5,
+        "importPath": "test2",
+        "description": "test2",
+        "peekOfCode": "frame3 = tk.Frame(master=window, height=25)\nframe3.pack(fill=tk.X)\nwindow.mainloop()",
+        "detail": "test2",
+        "documentation": {}
+    }
+]

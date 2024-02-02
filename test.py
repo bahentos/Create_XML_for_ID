@@ -1,5 +1,5 @@
 from tkinter import Tk, RIGHT, BOTH, RAISED, X, Y
-from tkinter.ttk import Frame, Button, Style
+from tkinter.ttk import Frame, Button, Style, Label, Entry
 
 
 class AppWindow(Frame):
@@ -15,6 +15,18 @@ class AppWindow(Frame):
 
         frame = Frame(self)
         frame.pack(fill=BOTH, expand=True)
+        label = Label(frame, background="red")
+        label.pack(fill=BOTH)
+
+
+        frame1 = Frame(self, padding=[10, 10, 10, 10])
+        frame1.pack(fill=BOTH, expand=True) 
+
+        label1 = Label(frame1, text="Количество макетов на спуске", background="green")
+        label1.pack(fill=BOTH)
+
+        input1 = Entry(frame1)
+        input1.pack(fill=BOTH)
 
         self.pack(fill=BOTH, expand=True)
 
